@@ -23,7 +23,7 @@ youtube-dl: error: You must provide at least one URL.
 <code>sudo wget https://raw.githubusercontent.com/Kutinging/YouTube-dl/master/ffmpeg/latest-ffmpeg-centos6.sh</code><br>
 <code>sudo chmod +x latest-ffmpeg-centos6.sh</code>  
 <code>sudo ./latest-ffmpeg-centos6.sh</code>  
-安裝完後到安裝的目錄底下查看bin資料夾  
-裡面包含ffmpeg,ffprobe等等檔案  
-將所有檔案複製到/bin/  
-<code>cp ffmpeg ffprobe ffserver lame vsyasm x264 yasm ytasm /bin/</code>  
+安裝完後到安裝的目錄底下查看bin資料夾  <br>
+裡面包含ffmpeg,ffprobe等等檔案  <br>
+將所有檔案複製到/bin/  <br>
+<code>cp ffmpeg ffprobe ffserver lame vsyasm x264 yasm ytasm /bin/</code>  <br>
