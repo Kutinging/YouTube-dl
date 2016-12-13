@@ -35,7 +35,7 @@ youtube-dl: error: You must provide at least one URL.
 網頁執行須要使用到php中的 shell_exec <br>
 主要語法有:<br>
 1.檢查網址:<br> 
-判斷網址是否為youtube.com 或 youtu.be<br> 
+判斷網址是否為youtube.com 或 youtu.be 並取得影片的ID<br> 
 >$kbps = $_GET['kbps'];  
 >$url = $_GET['url'];  
 >if(strrpos($url,"youtube")){  
@@ -46,4 +46,31 @@ youtube-dl: error: You must provide at least one URL.
 >}  
 >else{  
 >  
->}  
+>}  
+2.執行下載轉檔，詳細參數請參考<a href="https://github.com/rg3/youtube-dl">Youtube-dl官方說明</a>
+>if($url!=null && (strrpos($url,"youtube")||strrpos($url,"youtu.be"))){  
+>    	shell_exec("youtube-dl --max-filesize 20M --extract-audio --audio-format mp3 --audio-quality $kbps -o'mp3/%(id)s.%(ext)s' $url");  
+>    }  
+>else{  
+>    	echo "Error url";  
+>    }  
+3.使用者下載  
+><script type="text/javascript">
+>seconds = 6;
+>
+>function check(a,b){
+>	if(seconds <= 0 ){
+>		document.getElementById(b).innerHTML="開始下載 <meta http-equiv=\"refresh\" content=\"10;url=./\" \/>";
+>     	location.href="./mp3/downloadfiles.php?file=<?php echo $id[1] ?>";
+>	}
+>	else{
+>		seconds--;
+>		document.getElementById(b).innerHTML="正在取得連結<br/>"+ seconds+"秒";
+>		setTimeout(function(){check(a,b)}, 1000);
+>	}
+>}
+
+>window.onload=function(){
+>     check(seconds, 'countbox1');
+>};
+></script>
