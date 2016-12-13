@@ -12,12 +12,9 @@ YouTube-dl需要Python2.6,2.7,3.2+<br>
 <code>sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/bin/youtube-dl</code><br>
 <code>sudo chmod a+rx /usr/bin/youtube-dl</code><br>
 測試YouTube-dl是否正常運作<br>
-<code>youtube-dl<code><br/>正常會回傳<br>
-<code>Usage: youtube-dl [OPTIONS] URL [URL...]
+<code>youtube-dl<code><br>
+正常會回傳<br>
 
-youtube-dl: error: You must provide at least one URL.
-Type youtube-dl --help to see a list of all options.
-<code><br>
 <h3>2-2 ffmpeg</h3>
 從本專案中下載ffmpeg安裝腳本<a href="https://github.com/Kutinging/YouTube-dl/blob/master/ffmpeg/latest-ffmpeg-centos6.sh">ffmpeg</a><br>
 <code>sudo wget https://github.com/Kutinging/YouTube-dl/blob/master/ffmpeg/latest-ffmpeg-centos6.sh</code><br>
