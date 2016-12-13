@@ -39,10 +39,10 @@ youtube-dl: error: You must provide at least one URL.
 >$kbps = $_GET['kbps'];  
 >$url = $_GET['url'];  
 >if(strrpos($url,"youtube")){  
->    $id = explode("=",$url);  
+>	$id = explode("=",$url);  
 >}  
 >else if(strrpos($url,"youtu.be")){  
->    $id = explode("youtu.be/",$url);  
+>	$id = explode("youtu.be/",$url);  
 >}  
 >else{  
 >  
