@@ -36,15 +36,15 @@ youtube-dl: error: You must provide at least one URL.
 主要語法有:<br>
 1.檢查網址:<br>
 <code>
-$kbps = $_GET['kbps'];  
-$url = $_GET['url'];  
-if(strrpos($url,"youtube")){  
-    $id = explode("=",$url);  
-}  
-else if(strrpos($url,"youtu.be")){  
-    $id = explode("youtu.be/",$url);  
-}  
-else{  
-  
-}  
+$kbps = $_GET['kbps'];<br>
+$url = $_GET['url'];<br>
+if(strrpos($url,"youtube")){<br>
+    $id = explode("=",$url);<br>
+}<br>
+else if(strrpos($url,"youtu.be")){<br>
+    $id = explode("youtu.be/",$url);<br>
+}<br>
+else{<br>
+<br>
+}<br>
 </code>
