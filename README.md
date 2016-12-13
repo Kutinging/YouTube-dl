@@ -48,7 +48,6 @@ else{
   
 }  
 <br>
-<br>
 2.執行下載轉檔，詳細參數請參考<a href="https://github.com/rg3/youtube-dl">Youtube-dl官方說明</a>  
 if($url!=null && (strrpos($url,"youtube")||strrpos($url,"youtu.be"))){  
   shell_exec("youtube-dl --max-filesize 20M --extract-audio --audio-format mp3 --audio-quality $kbps -o'mp3/%(id)s.%(ext)s' $url");  
@@ -56,6 +55,5 @@ if($url!=null && (strrpos($url,"youtube")||strrpos($url,"youtu.be"))){
 else{  
   echo "Error url";  
 }  
-<br>
 <br>
 3.使用者下載
