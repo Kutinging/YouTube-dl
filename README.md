@@ -6,7 +6,8 @@
 YouTube-dl需要Python2.6,2.7,3.2+<br/>
 <code>yum install python -y</code><br/>
 
-<h1>Step2: 安裝 YouTube-dl</h1>
+<h1>Step2: 安裝必要軟體</h1>
+<h3>Youtube-dl</h3>
 到這邊<a href="https://rg3.github.io/youtube-dl/download.html">YouTube-dl</a> 下載YouTube-dl<br/>
 <code>sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/bin/youtube-dl</code><br/>
 <code>sudo chmod a+rx /usr/bin/youtube-dl</code><br/>
