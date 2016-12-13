@@ -56,9 +56,9 @@ else{
   echo "Error url";  
 }  
 <br>
-3.使用者下載
+3.使用者下載(Javascript)
 
-`seconds = 6;  
+seconds = 6;  
 
 function check(a,b){  
 if(seconds <= 0 ){  
@@ -74,6 +74,6 @@ else{
   
 window.onload=function(){  
  check(seconds, 'countbox1');  
-};  `
+};  
  
 
