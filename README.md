@@ -54,25 +54,4 @@ youtube-dl: error: You must provide at least one URL.
 >else{  
 >    	echo "Error url";  
 >    }<br>
-3.使用者下載  
-<code>
-  <script type="text/javascript">
-seconds = 6;
-
-function check(a,b){
-	if(seconds <= 0 ){
-		document.getElementById(b).innerHTML="開始下載 <meta http-equiv=\"refresh\" content=\"10;url=./\" \/>";
-     	location.href="./mp3/downloadfiles.php?file=<?php echo $id[1] ?>";
-	}
-	else{
-		seconds--;
-		document.getElementById(b).innerHTML="正在取得連結<br/>"+ seconds+"秒";
-		setTimeout(function(){check(a,b)}, 1000);
-	}
-}
-
-window.onload=function(){
-     check(seconds, 'countbox1');
-};
-  </script>
-</code>
+3.使用者下載
