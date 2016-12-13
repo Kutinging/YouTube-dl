@@ -22,4 +22,4 @@ Type youtube-dl --help to see a list of all options.
 從本專案中下載ffmpeg安裝腳本<a href="https://raw.githubusercontent.com/Kutinging/YouTube-dl/master/ffmpeg/latest-ffmpeg-centos6.sh">ffmpeg</a><br>
 <code>sudo wget https://raw.githubusercontent.com/Kutinging/YouTube-dl/master/ffmpeg/latest-ffmpeg-centos6.sh</code><br>
 <code>sudo chmod +x latest-ffmpeg-centos6.sh</code>  
-  sudo ./latest-ffmpeg-centos6.sh   
+<code>sudo ./latest-ffmpeg-centos6.sh</code>  
