@@ -46,7 +46,7 @@ else if(strrpos($url,"youtu.be")){
 }  
 else{  
   
-}  
+}  
 <br>
 2.執行下載轉檔，詳細參數請參考<a href="https://github.com/rg3/youtube-dl">Youtube-dl官方說明</a>  
 if($url!=null && (strrpos($url,"youtube")||strrpos($url,"youtu.be"))){  
@@ -57,3 +57,24 @@ else{
 }  
 <br>
 3.使用者下載
+<code>
+<script type="text/javascript">
+seconds = 6;
+
+function check(a,b){
+	if(seconds <= 0 ){
+		document.getElementById(b).innerHTML="開始下載 <meta http-equiv=\"refresh\" content=\"10;url=./\" \/>";
+     	location.href="./mp3/downloadfiles.php?file=<?php echo $id[1] ?>";
+	}
+	else{
+		seconds--;
+		document.getElementById(b).innerHTML="正在取得連結<br/>"+ seconds+"秒";
+		setTimeout(function(){check(a,b)}, 1000);
+	}
+}
+
+window.onload=function(){
+     check(seconds, 'countbox1');
+};
+</script>
+</code>
