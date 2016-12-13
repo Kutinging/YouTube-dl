@@ -12,7 +12,7 @@ YouTube-dl需要Python2.6,2.7,3.2+<br>
 <code>sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/bin/youtube-dl</code><br>
 <code>sudo chmod a+rx /usr/bin/youtube-dl</code><br>
 測試YouTube-dl是否正常運作<br>
-<code>youtube-dl<code><br>
+<code>youtube-dl</code><br>
 正常會回傳<br>
 
 <h3>2-2 ffmpeg</h3>
