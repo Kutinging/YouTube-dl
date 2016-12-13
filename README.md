@@ -57,7 +57,7 @@ else{
 }  
 <br>
 3.使用者下載
-`<script type="text/javascript">  
+``  
 seconds = 6;  
 
 function check(a,b){  
@@ -75,5 +75,5 @@ else{
 window.onload=function(){  
  check(seconds, 'countbox1');  
 };  
-</script>`  
+``  
 
