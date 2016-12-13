@@ -35,14 +35,14 @@ youtube-dl: error: You must provide at least one URL.
 網頁執行須要使用到php中的 shell_exec <br>
 主要語法有:<br>
 1.檢查網址:<br>
-	$kbps = $_GET['kbps'];
-	$url = $_GET['url'];
-	if(strrpos($url,"youtube")){
-    	$id = explode("=",$url);
-    }
-	else if(strrpos($url,"youtu.be")){
-    	$id = explode("youtu.be/",$url);
-    }
-	else{
+    $kbps = $_GET['kbps'];
+$url = $_GET['url'];
+if(strrpos($url,"youtube")){
+    $id = explode("=",$url);
+}
+else if(strrpos($url,"youtu.be")){
+    $id = explode("youtu.be/",$url);
+}
+else{
     	
     }
