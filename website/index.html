@@ -1,0 +1,215 @@
+<?php
+	$id = $_GET['id'];
+	if($id != null){
+		$auto_url = "https://youtu.be/".$id;
+	}
+	else{
+		$auto_url = "";
+	}
+?>
+
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>YouTube Downloader Beta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="Shortcut Icon" type="image/x-icon" href="images/icon.ico" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    	<script type=text/javascript src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="assets/js/layer.js"></script>
+	</head>
+
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="" alt="" /></span>
+                    <section id="youtube" class="main">
+						<h1>YouTube Downloader Beta</h1>
+						<p>
+                        	<!--<form action=check.php methon=get>-->
+                            <form name="form" id="form" style="font-size:20px;">
+                            	<p>1.Enter YouTube url<br/><input type=text name=url id="url" value="<?php echo $auto_url;?>"/></p>
+                            	2.Select kbps<br/>
+								<div class="select-wrapper">
+                            	<p><select name="kbps" id="kbps" style="color:#000;">
+                                	<option value="128">.MP3 128kbps</option>
+                                	<option value="256">.MP3 256kbps</option>
+                                	<option value="320">.MP3 320kbps</option>
+                                </select></p></div>
+                            	<p>3.Let's go！<br/><input class="button" value="Download" id="iframe" onclick='processFormData();' readonly/></p>
+                            </form>
+                        
+                    </section>
+            			
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul style="font-size:20px;">
+                        	<li><a href="#youtube" class="active">Let's Download！</a></li>
+							<li><a href="#intro" class="active">What's it?</a></li>
+							<li><a href="#first">Support format</a></li>
+                        	<li><a href="#Update">Update history</a></li>
+							<li><a href="#privacy">隱私政策</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>What's it?</h2>
+										</header>
+										<p style="font-size:20px;">This is a website which can download mp3 file from youtube,
+                                        	and you also can select mp3 kbps,most important is this service is free！</p>
+
+									</div>
+									<span class="image"><li href="#youtube" class="icon fa-download fa-5x alt"></li></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Support format</h2>
+								</header>
+                            		<p style="font-size:20px;">Now you can download files format</p>
+                            		<ul style="font-size:20px;">
+                                    	.MP3
+                                    </ul>
+								<footer class="major">
+									
+								</footer>
+							</section>
+                    
+                    		<section id="Update" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Update history</h2>
+										</header>
+                                    <ul style="font-size:20px;">
+										<li>2016/10/25 - Add Bookmarks Tool 
+											<ul class="actions small">
+												<li><a href="javascript: ( function() { if(location.hostname=='www.youtube.com' || location.hostname=='youtu.be'){ var str = location.href; var EnterUrl = function() { if (str === null) { return false; } if (!str) { return 'error'; } var getID = str.match('=\\w\+'); return(null == getID) ? 'error' : 'http://www.youtube.kttsite.com?id' + getID; }; var result = EnterUrl(); window.open(result);} } )();" class="button small">YTDer</a></li>
+											</ul>
+										</li>
+										<li>2016/09/06 - Support "https://youtu.be/(id)" and fix time countdown.</li>
+                                    	<li>2016/09/03 - Start beta.</li>
+                                    </ul>
+
+									</div>
+								</div>
+							</section>
+							
+							<section id="privacy" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>隱私政策</h2>
+										</header>
+										使用本服務視同同意以下政策
+									<ul class="alt">
+										<li>本站只提供此服務，並不負責使用者使用此服務後產生的相關問題(如：侵權、盜用等...)</li>
+										<li></li>
+									</ul>
+										
+									
+
+									
+									</div>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Builded by KuTing.</h2>
+						</section>
+						
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- youtube1 -->
+						<ins class="adsbygoogle"
+								 style="display:inline-block;width:320px;height:100px"
+								 data-ad-client="ca-pub-5441808858903508"
+								 data-ad-slot="9102085073"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+						
+						<section>
+							<h2>Powered by Conoha.jp</h2>
+							<h2>Open source not yet</h2>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; www.youtube.kttsite.com. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+            var website = location.hostname;
+            var check,indexOf;
+           	 	function processFormData() {
+  					var url_element = document.getElementById('url');
+  					var url = url_element.value;
+  					var kbps_element = document.getElementById('kbps');
+ 					var kbps = kbps_element.value;
+  					check = "check.php?url="+url+"&kbps="+kbps;
+				}
+            
+                $('#iframe').on('click', function(){
+ 					 layer.tips('Please wait.', '#iframe', {
+  					 tips: [1, '#3595CC'],
+  					 time: 10000});
+            	});
+            	$('#iframe').on('click', function(){
+ 					 layer.load(1,{time: 10*1000});
+				});
+            	$('#iframe').on('click', function(){
+            		layer.open({
+  						type: 2,
+  						title: 'Check url、Wait and Download！',
+  						shadeClose: true,
+  						shade: 0.8,
+  						area: ['40%', '40%'],
+  						content: '//'+ website +'/'+ check }); 
+                });
+            
+
+            	
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
